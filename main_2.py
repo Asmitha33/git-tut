@@ -38,7 +38,5 @@ app=FastAPI()
 def Welcome():
     return "Welcome to FastAPI with MySQL"
 
-class StudentCreate(BaseModel):
-    name:str
-    age: int
+
 
