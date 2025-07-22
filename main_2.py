@@ -23,16 +23,9 @@ Base.metadata.create_all(bind=engine)
 
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
-def get_db():
-    session=SessionLocal()
-    try:
-        yield session
-    finally:
-        session.close()
 
-#FastAPI Code
 
-app=FastAPI()
+
 
 
 

@@ -49,7 +49,3 @@ def create_student(student:StudentCreate, db:Session=Depends(get_db)):
     db.commit()
     return "Student created successfully"
 
-@app.get("/students/")
-def get_students(db: Session=Depends(get_db)):
-    list_of_students=db.query(Student).all()
-    return list_of_students
