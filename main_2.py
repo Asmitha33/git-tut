@@ -36,7 +36,7 @@ app=FastAPI()
 
 @app.get("/")
 def Welcome():
-    return "Welcome to FastAPI with MySQL"
+    return "Welcome to FastAPI"
 
 
 
