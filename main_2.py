@@ -34,11 +34,5 @@ def get_db():
 
 app=FastAPI()
 
-@app.get("/")
-def Welcome():
-    return "Welcome to FastAPI with MySQL"
 
-class StudentCreate(BaseModel):
-    name:str
-    age: int
 
